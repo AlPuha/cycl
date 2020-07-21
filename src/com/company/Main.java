@@ -25,12 +25,12 @@ public class Main {
 
         for (int i = 0; i <wordsArray.length; i++) {
 
-                    // все слова длина которых больше 3 или ровна согластно условии
-            if ( (wordsArray[i].length() >= 3) && (wordsArray[i].charAt(0) == 'a') ) {//&& коньюнсия
+                    // все слова которе начинаются на Б    // все слова которые начинаются на А
+            if ( (wordsArray[i].length() >=3) && ( (wordsArray[i].charAt(0) == 'b') || (wordsArray[i].charAt(0) == 'a') ) ) {// "||" дисджиншен.
                                                    //Первая буква charAt(0) солова "а"
                                                    // есть первая "нулевая"!!!! запомните!!
                                                     // charAt берется в одиночных кавычках
-                
+
 
 
                 System.out.print(i + ". ");// выводит номер слова
