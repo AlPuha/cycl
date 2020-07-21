@@ -23,7 +23,7 @@ public class Main {
         System.out.println(wordsArray.length);
 
 
-        for (int i = 0; i <wordsArray.length; i++) {
+        for (int i = 0; i <100; i++) {
 
                     // все слова которе начинаются на Б    // все слова которые начинаются на А
             if ( (wordsArray[i].length() >=3) && ( (wordsArray[i].charAt(0) == 'b') || (wordsArray[i].charAt(0) == 'a') ) ) {// "||" дисджиншен.
@@ -35,7 +35,10 @@ public class Main {
 
                 System.out.print(i + ". ");// выводит номер слова
                 System.out.println(wordsArray[i]);// это выводит слово на каком номере
+            }else {
+                System.out.println(i + " Слово (" + wordsArray[i] + ") не подходит");
             }
+
         }
     }
 }
